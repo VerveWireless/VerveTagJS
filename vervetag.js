@@ -26,9 +26,9 @@
     }
 
     // respect the outer call and detect secure
-    var protocol = 'http:';
-    if (location.protocol == 'https:') {
-        protocol = 'https:';
+    var protocol = 'https:';
+    if (location.protocol === 'http:') {
+        protocol = 'http:';
     }
 
     // iterate params for special cases & reformat for AdCel request
